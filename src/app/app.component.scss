@@ -1,0 +1,39 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  &__header {
+    background-color: blueviolet;
+    width: 100%;
+    height: 10vh;
+    @media(min-width: 767px) {
+      z-index: 10;
+      opacity: 0.5;
+    }
+  }
+
+  &__canvas {
+    background-color: orange;
+    width: 100%;
+    height: 90vh;
+    overflow-y: hidden;
+    @media(min-width: 767px) {
+      height: 100vh;
+    }
+  }
+
+  &__footer {
+    background-color: blueviolet;
+    width: 100%;
+    @media(min-width: 767px) {
+      z-index: 10;
+      opacity: 0.5;
+    }
+  }
+
+}
