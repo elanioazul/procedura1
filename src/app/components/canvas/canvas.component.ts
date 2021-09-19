@@ -8,7 +8,7 @@ import Procedural from 'procedural-gl';
 })
 export class CanvasComponent implements OnInit, AfterViewInit {
 
-  public coord = { latitude: 42.724705, longitude: 0.207672 };
+  public coord = { latitude: 45.767523, longitude: -114.907178 };
 
   public datasource = {
     elevation: {
@@ -16,7 +16,7 @@ export class CanvasComponent implements OnInit, AfterViewInit {
       attribution: '&copy;<a href="https://www.nasadem.xyz">nasadem.XYZ</a>',
       pixelEncoding: 'nasadem', // or 'terrain-rgb', 'terrarium'
       maxZoom: 9,
-      urlFormat: `https://www.nasadem.xyz/api/v1/dem/{z}/{x}/{y}.png?key=${environment['nasadem-apikey']}`
+      urlFormat: `https://www.nasadem.xyz/api/v1/dem/{z}/{x}/{y}.png?key={apiKey}}`
     },
     imagery: {
       apiKey:  environment['maptiler-apikey'],
