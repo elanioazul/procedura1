@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  "production": true,
+  "nasadem-apikey": "1f0fdfa4b376d47c9a3fc082dc4477bb9",
+  "maptiler-apikey": "TihHLtBNpTt2U1j9teAe"
 };
 
 /*

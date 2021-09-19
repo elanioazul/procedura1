@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "types" : ["node"],
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
@@ -14,7 +15,10 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+		"paths": {
+			"@procedura1/*": ["src/app/*"]
+		}
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
